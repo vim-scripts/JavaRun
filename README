@@ -1,0 +1,5 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=245
+
+Save/compile (if necessary) and run the Java, Python, Perl, Ruby, Tcltk or CLisp source program in the current buffer.
+
+Some useful abbreviations for Java programming, e.g. psvm for "public static void main(String[] args) { }", cl for class, etc.
