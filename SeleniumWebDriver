@@ -1,0 +1,18 @@
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import static org.junit.jupiter.api.Assertions.*;
+class CheckSourceLabTestTest {
+    @Test
+    public void site_header_is_on_home_page(){
+        WebDriver browser;
+        System.setProperty("webdriver.gecko.driver","C:\\utils\\geckodriver.exe");
+        browser = new FirefoxDriver();
+        browser.get("http://google.com");
+        WebElement header = browser.findElement(By.id("site-header"));
+        assertTrue(header.isDisplayed());
+        browser.close();
+    }
+}
